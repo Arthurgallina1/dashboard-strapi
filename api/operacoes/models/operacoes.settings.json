@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operacoes",
+  "info": {
+    "name": "Operações",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "equipes": {
+      "via": "operacao",
+      "collection": "equipes"
+    }
+  }
+}

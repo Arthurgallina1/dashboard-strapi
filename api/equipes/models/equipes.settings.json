@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipes",
+  "info": {
+    "name": "Equipes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "users": {
+      "via": "equipe",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "operacao": {
+      "model": "operacoes",
+      "via": "equipes"
+    }
+  }
+}
