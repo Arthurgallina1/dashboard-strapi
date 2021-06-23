@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operadores",
+  "info": {
+    "name": "Operadores",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "equipe": {
+      "via": "operadors",
+      "model": "equipes"
+    },
+    "conversas": {
+      "via": "operador",
+      "collection": "conversas"
+    }
+  }
+}

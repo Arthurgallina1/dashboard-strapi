@@ -12,10 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_user": {
+    "operador": {
       "via": "conversas",
-      "plugin": "users-permissions",
-      "model": "user"
+      "model": "operador"
     },
     "mensagens": {
       "via": "conversa",

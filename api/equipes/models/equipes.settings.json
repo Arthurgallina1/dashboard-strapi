@@ -17,14 +17,13 @@
       "unique": true,
       "required": true
     },
-    "users": {
-      "via": "equipe",
-      "plugin": "users-permissions",
-      "collection": "user"
-    },
     "operacao": {
       "model": "operacoes",
       "via": "equipes"
+    },
+    "operadors": {
+      "via": "equipe",
+      "collection": "operador"
     }
   }
 }
