@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conversas",
+  "info": {
+    "name": "Conversas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "via": "conversas",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mensagens": {
+      "via": "conversa",
+      "collection": "mensagens"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "aberta",
+        "fechada",
+        "vendaRealizada",
+        "desistencia"
+      ]
+    }
+  }
+}

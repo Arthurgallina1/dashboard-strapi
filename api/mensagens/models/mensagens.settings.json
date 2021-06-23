@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mensagens",
+  "info": {
+    "name": "mensagens",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mensagem": {
+      "type": "richtext",
+      "default": "mensagem",
+      "required": true,
+      "unique": true
+    },
+    "conversa": {
+      "via": "mensagens",
+      "model": "conversas"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "chat_uid": {
+      "type": "string"
+    },
+    "chat_dir": {
+      "type": "string"
+    },
+    "chat_type": {
+      "type": "string"
+    }
+  }
+}

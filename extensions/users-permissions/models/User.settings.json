@@ -62,6 +62,13 @@
     "equipe": {
       "via": "users",
       "model": "equipes"
+    },
+    "conversas": {
+      "via": "users_permissions_user",
+      "collection": "conversas"
+    },
+    "atividade": {
+      "type": "string"
     }
   }
 }
